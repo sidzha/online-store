@@ -1,0 +1,143 @@
+html {
+  color: #f9ffee;
+  background-color: #222831;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Segoe UI Light', sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #efbb35;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.section-1,
+.section-2 {
+  border-radius: 10px;
+  background-color: #1f242c;
+  padding: 0 15px;
+  min-height: 500px;
+}
+
+.section-1 {
+  float: left;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.section-2 {
+  float: right;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 750px;
+}
+
+.items div {
+  text-align: center;
+  margin: 5px;
+}
+
+.cart {
+  padding: 0;
+}
+
+.item-card {
+  padding: 5px;
+  background-color: #1a1d24;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.status-badge {
+  display: block;
+  text-align: left;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.available {
+  background-color: rgba(70, 236, 48, 0.1);
+  color: #45ef35;
+}
+
+.unavailable {
+  background-color: rgba(236, 76, 48, 0.1);
+  color: #ef3535;
+}
+
+.btn {
+  transition: ease 0.5s;
+  font-family: 'Segoe UI', sans-serif;
+  width: 110px;
+  height: 30px;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  color: #f9ffee;
+  cursor: pointer;
+}
+
+.js-remove-btn {
+  transition: ease 0.5s;
+  font-family: 'Segoe UI', sans-serif;
+  width: 110px;
+  height: 30px;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  border-color: #e84279;
+  color: #e84279;
+}
+
+.btn:hover {
+  transition: 0.1s ease;
+  border-style: hidden;
+  color: #1f242c;
+  background-color: #f9ffee;
+}
+.js-remove-btn:hover {
+  transition: 0.1s ease;
+  border-style: hidden;
+  color: #1f242c;
+
+  background-color: #e84279;
+}
+
+.btn:disabled {
+  color: gray;
+  border-color: slategray;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.btn:disabled:hover {
+  color: gray;
+  border-width: 1px;
+  border-style: solid;
+  border-color: slategray;
+  background-color: transparent;
+  cursor: not-allowed;
+}
