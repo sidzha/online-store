@@ -12,14 +12,16 @@ function getNumberOfPages() {
   return Math.ceil(itemList.length / numberPerPage);
 }
 
+const randomSeed = () => `f${(~~(Math.random() * 1e8)).toString(16)}`;
+
 //Заполняем массив позициями
 function makeList() {
   for (let id = 0; id < numberOfItems; id++)
     itemList.push({
       id,
-      name: `Item ${(~~(Math.random() * 1e8)).toString(16)}`,
-      image: `https://via.placeholder.com/150.png`,
-      descr: `Супер стул ${(~~(Math.random() * 1e8)).toString(16)}`,
+      name: `Item ${randomSeed()}`,
+      image: `https://source.unsplash.com/150x150/?chair?${randomSeed()}`,
+      descr: `Супер стул ${randomSeed()}`,
       price: `${Math.floor(Math.random() * 9999)}₽`,
       available: Math.random() < 0.7,
       count: 0

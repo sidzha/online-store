@@ -55,7 +55,6 @@ document.addEventListener('click', function(evt) {
         newCart.remove(targetId, item.price);
         newCart.saveItems();
         makeCartList();
-        if (item.cont < 1) evt.target.parentNode.remove();
       }
     });
   }
